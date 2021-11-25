@@ -1,0 +1,229 @@
+---------------
+THE BUNIVESE
+---------------
+
+Buniverse: everything that composes the bunicorn universe.
+HUBs: All the core pillars or main "buildings" of the buniverse. This include: the Dungeons, the Arena, the Foundry, the Marketplace, the Magic Association, the Bank and the Casino.
+Treasury: Smart contract were all the games revenue is stored and eventually redistributed.
+ 
+0. Player roles (each player can take more than 1 role, but it's main focus will be 1 role):
+
+A. Passive income players (PIP): Their aim is to get a stable amount of income, which can come from just doing PVE, having land or having partial ownership of HUBs.
+                                 They only require a basic team
+
+B. Active income players (AIP): Their aim is to take chances at getting bigger rewards. They do dungeons and breeding in order to sell assets to other players. 
+                                They participate in the arena in order to get honor and increase their potential earnings.    
+                                They require a good team and decent equipment
+
+C. Challengers (CHA):           Their aim is to be among the strongest players, in order to become champions and get the biggest rewards in the game. 
+                                They participate in the arena in order to get top rankings. 
+                                They require strong teams and the best equipment, along with boosts (auras, skills and potions)
+
+
+FEATURES
+---------
+ 
+1. BATTLE (PVE)
+
+PVE acts like a staking mechanism. It gives every player a base salary, based on the BUR currency, that they can choose to spend in an attempt to get better rewards
+or sell it to other players. Every action on the buniverse will require a certain amount of BUR.
+
+
+2. Dungeons
+
+1 trainer + 1 buni each dungeon:
+
+DUNGEON REQUIREMENT: buni of at least 3 stars + key with at least same stars as buni:
+Spend BUR ->  Get random key (chance to get a 3/4/5)
+Spend BUR ->  Upgrade key (3 -> 4 -> 5) 
+
+DUNGEON STAGES
+
+--------------------------
+O -> X -> O -> X -> O -> T
+--------------------------
+
+Chance to get hurt (lose vitality) on the obstacles (O) (traps) 
+To regenerate vitality you must use first aid kits (bought with BUR) inside the dungeon
+If vitality hits 0 inside the dungeon, you get kicked out
+Outside the dungeon, vitality is regained periodically 
+
+Rewards: You must pass all obstacles (O) and enemies (X) to get to the treasure (T)
+Possible rewards: 
+
+- Chest (big but variable amount of tokens)
+- Ancient Spell (limited amount of uses, stronger than regular spells) 
+- Gems (used in crafting equipment to give it stronger stats) 
+- Scrolls (to enhance trainers)
+- Mysterious grass 
+- Auras 
+- Decomposed Equipment (can be dismantled on the Foundry to get materials)
+
+3. Arena
+
+The most important feature in the game, this is were challengers fight to become champions.
+Players battle with each other in an attempt to gain honor and prizes. In order to do so, they might need to burn some BUR and invest on their team and equipment.
+
+The arena doesn't generate revenue. All BUR used on it is burnt. The revenue is generated from all the auxiliary HUBs that are required in order to craft items that are used on the arena.
+Prize: A fixed % share of the treasury's revenue is allocated to fund the prize pool. 
+
+
+4. Foundry
+
+Players use the foundry to craft equipments
+Requirements to craft equipment: Metal + Gems + Fee (BUR)
+
+5. Magic association
+ 
+Players go to the magic association to create spell and potions.
+Half of the BUR fees used are given to the owners, while the other half goes to the treasury.
+
+Spells:
+Potions:
+Requires fruits and herbs obtained from Lands.
+
+
+6. Hunter Inc
+
+Players go to Hunter Inc in order to get new bunis by breeding or using shards. Breeding requires a potion and paying some BUR as fee.
+Players can opt to use 2 different kind of potions:
+Normal Potion and Enhanced Potion. Both are crafter on the magic association.
+Enhanced potion has incresed chances of getting a better buni. To craft this potion, players need to add mysterious grass, which only comes from the dungeon, when crafting a normal potion.
+
+
+7. Land
+
+Lands are NFTs that players can buy. They have different rarities and will be able to produce materials, with the yield increasing with the rarity. 
+Types of lands: Mines and Agricultural plots.  
+Mines produce metals that are used for crafting equipments. Each day, random materials can be harvested, with higher rarities having a higher chance of getting better materials.
+Aglicultural plots produce fruits and herbs used for crafting potions. Each player can chose the materials they will be able to produce, but they can only choose between the ones available for their rarity.
+Owners might need bunicorns and/or tools (bought with BUR) in order to get the materials. Additional gameplay could be added to gathering/harvesting in order to give it more depth.  
+
+8. Guild association 
+
+Includes a tabern, where everyone can communicate and announcements are made, along with the guild headquarters, where guild members talk with each other.
+It's the replacement of Discord and Telegram as the main way of communicating game updates and events, as well as disscussions. 
+This is important to further consolidate the buniverse as the main place where players interact with each other.
+
+9. Bank
+
+It's the replacement of the DEX. Here, people can opt to provide liquidity, stake tokens and swap tokens.
+This is important to further consolidate the buniverse as the main place where players interact with it's economy.
+It gives gamification characteristics to the DEX, and introduces people that so far have only been using the dex to the buniverse.
+The bank can give collateralized loans to generate interest and emit treasury backed bonds when it needs immediate revenue.  
+ 
+10. Casino 
+
+The casino is a place where people can bet their tokens, it will initially consist of slot machines and lottery.
+The casino accepts BUR. Using unclaimed BUR on the casino will reduce all profits made by 15%.
+The casino redistributes Y% of the total betted (B) BUR value back to players, in BUR and other rewards (shards). The rest is burnt.
+A trainer is needed to enter the casino.
+
+
+The overall economy looks as follow:
+
+Net BUR (NB) = Minted BUR (MB) - Burnt BUR (BB)
+Circulating BUR (CB) = Net BUR (NB) - Staked (and locked) BUR (SB)- Treasury BUR (TB) 
+
+The only source that mints BUR is the PVE, then:
+Minted BUR (MB) = PVE BUR(PB)
+
+BUR is fully burnt when: used on the arena (ABB), used for dungeon keys (DBB), used to enhance bunis and to fusion trainers. 
+BUR is partially burnt when: used on the casino (CBB). The amount burnt is ((1-Y)/100)*B
+
+
+BB = ABB + DBB + CBB
+
+The treasury revenue:
+
+Treasury BUNI (TBU): 
+Marketplace Fees (MF) = 10% of the total market volume (0.1*MV)
+
+Treasury BUR (TB):
+50% of the total foundry fees (0.5*TFF)
+50% of the total magic association fees (0.5*TMAF)
+50% of the total Hunter Inc fees (0.5*HIF)
+TB = 0.5*(FF+MAF+HIF)
+
+
+SUSTAINABLE BUNIVERSE 
+---------------------
+
+The buniverse doesn't create value out of nowhere, it just redistributes it. 
+As such, it must follow the equation:
+
+SUM(Money_in - Money_out - Acumulation,0,t) = 0
+
+ 
+Money_in is the BUNI invested on the game. Since all invested buni is used on the market, it can be represented by the market volume (MV), then Money_in is equal to MV
+We also need to account for the BUNI price (BUP) to convert it to USD units.
+
+90% of the MV is given in a peer to peer transaction between players on the marketplace, while 10% of it is given by the redistribution of the marketplace tax by the treasury.
+This can come in the following ways:
+
+1- Buyback of BUR to burn it 
+2- Adding liquidity to BUR 
+3- Filling the arena's prize pool 
+4- Others
+ 
+Money_out is BUR price (BP)* BUR Sold (BS) and other tokens (OT) given.
+BS is a fraction (S) of NB
+
+Acumulation is the non sold BUR = (1-S)sum of Staked BUR (SB) and Treasury BUR (TB)
+
+Then, we have that: 
+
+MV*BUP - BP*S*(PB-BB-SB-TB)- OT + (1-S)*(PB-BB-SB-TB)  = 0
+MV*BUP = BP*S*(PB-BB-SB-TB) + OT - (1-S)*(PB-BB-SB-TB)
+MV*BUP = BP*(PB-BB-SB-TB) + OT
+
+However, for a given period of time, from t to t+1, we assume Accumulated BUR will not be sold. Then, we only need:  
+
+MV*BUP - BP*S*(PB-BB-SB-TB)- OT > 0
+
+Notice that if MV lowers, the natural way of the game to be sustainable is for BUR price to go down. This happens through the weights on the liquidity between BUR and BNB.  
+However, the tokenomics are made so that when BUR price decreases, the minted BUR (MB) also decreases, so that BURs price decrease in a low MV scenario is slower.
+If we want to keep the BUR price as stable as possible, then we need to change the other Money_out variables in order to decrease it.
+
+SB can be increased by giving higher APR on staking, or locking the staked BUR in exchange for benefits.
+Staking or locking can be a requirement in order to recieve benefits of the partnerships that the buniverse has with other games.
+
+BB is the amount of burnt BUR. The casino burnt ratio is fixed. 
+To increase burning by enhancing or fusion, timely events can be applied (increased chance on lucky enhancement, stop requiring scrolls)
+ 
+Extra sources of revenue (ER) can be applied when there is low MV. These are: 
+1- Revenue from partnerships (PR)
+2- Revenue from selling lands (LR)
+3- Revenue from selling partial ownership of HUBs (OR) 
+4- Revenue from treasury backed bonds (TBR)
+
+ER = PR+LR+OR+TBR
+
+The new formula is:
+MV + ER - BP*S*(PB-BB-SB-TB)- OT >= 0
+
+It's important to notice that PR and OT are correlated, since most OTs are given or sold in a private sale to Bunicorn.
+While OR and TBR can give instant revenue to the treasury, they take away future revenue. TBR will decrease future revenue by a fixed amount, while OR will decrease future revenue by a percentage based amount. 
+That's why it is only recommended to use this ERs when it's really needed (when MV has been low for a while).
+LR is the best way to increase revenue. To maximize the price and amount of land sold, it should be offered when the game is stable and has a high BUR price.
+
+
+ 
+
+
+
+
+
+  
+ 
+
+  
+
+
+
+
+
+
+
+
+
